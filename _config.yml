@@ -1,9 +1,11 @@
-title: Maplesteve.GitHub.io
-description: 
-google_analytics: 
+title: maplesteve.com
+description:
+google_analytics:
 show_downloads: false
 theme: jekyll-theme-minimal
 
 gems:
   - jekyll-mentions
   - jekyll-sitemap
+  - jekyll-feed
+  
