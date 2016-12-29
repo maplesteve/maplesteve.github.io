@@ -5,6 +5,4 @@ category: digital
 tags: fun
 ---
 
-Link: http://bit.ly/bR3sPv
 ![](/media/129121875610219278.jpg)
-

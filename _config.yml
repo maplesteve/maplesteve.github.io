@@ -28,3 +28,5 @@ defaults:
       type: tags
     values:
       layout: blog_by_tag
+
+permalink: /:year/:month/:day/:title.html

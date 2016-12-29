@@ -1,0 +1,104 @@
+<html>
+<head>
+	<title>OfficeDigger</title>
+	<link rel="stylesheet" type="text/css" href="../od.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- new code for Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10576528-1', 'maplesteve.com');
+//  {% if page.ga_group != nil %}
+//    ga('set', 'contentGroup1', '{{ page.ga_group }}');
+//  {% else %}
+//    {% if page.category != nil %}
+//      ga('set', 'contentGroup1', '{{ page.category }}');
+//    {% else %}
+//      ga('set', 'contentGroup1', 'index');
+//	{% endif %}
+//  {% endif %}
+  ga('send', 'pageview');
+</script>
+<script>
+/**
+* Function that tracks a click on an outbound link in Google Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+     function () {
+     document.location = url;
+     }
+   });
+}
+</script>
+</head>
+<body>
+
+<div id="sidebar">
+	<ul>
+		<a href="index.html"><li>Überblick</li></a>
+		<a href="dokumentation.html"><li>Dokumentation</li></a>
+		<a href="download.html"><li>Download</li></a>
+		<a href="support.html"><li>Support</li></a>
+	</ul>
+	<span class="header_header">OfficeDigger</span>
+	<div id="header_icon"></div>
+</div>
+
+<div id="marketing">
+	<span class="m_image"><img src="../images/icon/icon256x256.png" alt="" height="240" width="240"/></span>
+	<p><span class="m_header">OfficeDigger</span></p>
+	<p><span class="m_text">Ihr Schlüssel zu eingebetteten Dateien in Microsoft Word oder Powerpoint Dokumenten.<br /><br />Öffnen. Ansehen. Extrahieren.
+	</span></p>
+	<span class="m_workswith"><img src="images/workswith.png" width="180" height="60" alt="" /></span>
+</div>
+
+<div id="content">
+	<div id="c_section">
+		<a href="#img1">
+			<span class="c_image"><img src="images/screens/view.png" alt="" height="200" width="223"/></span>
+		</a>
+		<p><span class="c_header">Das Feature, das Microsoft vergessen hat</span></p>
+		<span class="c_text"><p>Kennen Sie das? Der Kollege schickt Ihnen ein wichtiges Memo mit der aktuellen Vertriebspräsentation und Sie fragen sich, wie Sie die eingebettete Präsentation öffnen können?</p><p>Leider hat Microsoft bei "Office für Mac" vergessen, dies zu ermöglichen. Bislang war einen Kollegen mit einem Windows-Computer um Hilfe zu bitten, die einzige Möglichkeit.</p><p>Jetzt gibt es OfficeDigger: Ziehen Sie einfach das Memo in OfficeDigger und schon können sie eingebettete Office Dateien ansehen und extrahieren.</p></span>
+	</div>
+
+	<div id="c_section">
+		<a href="#img2">
+			<span class="c_image"><img src="images/screens/quicklook.png" alt="" height="200" width="282"/></span>
+		</a>
+		<p><span class="c_header">QuickLook - wissen, was drin ist</span></p>
+		<span class="c_text"><p>OfficeDigger unterstützt Apple's QuickLook Technologie. So können Sie sich die Dateien vor dem Extrahieren anschauen.</p><p>Nutzen Sie OfficeDigger als einfaches Vorschau-Tool - schauen Sie sich die eingebetteten Dokumente einfach kurz an, ohne sie zu Extrahieren.</p></span>
+	</div>
+
+	<div id="c_section">
+		<a href="#img3">
+			<span class="c_image"><img src="images/screens/drag-and-drop.png" alt="" height="200" width="263"/></span>
+		</a>
+		<p><span class="c_header">Dateien Extrahieren - einfacher geht's nicht</span></p>
+		<span class="c_text"><p>OfficeDigger bietet eine saubere Übersicht über die eingebetteten Dateien. Wählen Sie einfach eine oder mehrere Dateien aus und sichern sie per Drag-and-Drop an einem beliebigen Ort.</p><p>Sie können eine Datei auch direkt in eine neue E-Mail ziehen, die Sie gerade verfassen.</p></span>
+	</div>
+
+	<div id="c_section">
+		<h3>Download</h3>
+		<a href="https://itunes.apple.com/de/app/officedigger/id817164908?mt=12"  onclick="trackOutboundLink('https://itunes.apple.com/de/app/officedigger/id817164908?mt=12'); return false;">
+			<div id="dl_box">
+			<img src="images/Download_on_the_Mac_App_Store_Badge_165x40.svg" alt="" width="165" height="40"/><br /><br />
+			Laden Sie OfficeDigger im Mac App Store.
+			</div>
+		</a>
+	</div>
+</div>
+
+<a href="#" class="lightbox" id="img1"><img src="images/screens/view_large.png"></a>
+<a href="#" class="lightbox" id="img2"><img src="images/screens/quicklook_large.png"></a>
+<a href="#" class="lightbox" id="img3"><img src="images/screens/drag-and-drop_large.png"></a>
+
+<script type="text/javascript" src="/css/js/retina-1.1.0.min.js"></script>
+</body>
+</html>

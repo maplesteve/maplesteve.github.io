@@ -4,7 +4,6 @@ title: alles geschummelt!
 category: analog
 ---
 
-Link: http://bit.ly/cRqRhz
-Hätte ich nicht gedacht:
+Hätte ich nicht gedacht.
 
-(Via “that’s how it happened”)
+(Via [“that’s how it happened”](http://bit.ly/cRqRhz))

@@ -1,0 +1,9 @@
+{% if post %}
+  {% assign categories = post.categories %}
+{% else %}
+  {% assign categories = page.categories %}
+{% endif %}
+{% for category in categories %}
+  <!-- <span class="entry-categories"><a href="/{{ category }}/" rel="category">{{ category }}</a></span>{% unless forloop.last %},{% endunless %} -->
+  <span class="entry-categories">{{ category }}</span>{% unless forloop.last %},{% endunless %}
+{% endfor %}

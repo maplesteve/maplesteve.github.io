@@ -2,10 +2,10 @@
 layout: post
 title: Insert timestamps into Jekyll pages
 category: digital
-tags: tech jekyll
+tags: [tech, jekyll]
 ---
 
-Though my [Jekyll setup](/2014/01/19/maplesteve-now-powered-by-jekyll) runs perfectly smooth, I wanted to have some kind of control, if (all) pages are re-generated when I make changes to the CSS or other minor things that aren't immediately visible.
+Though my [Jekyll setup](/2014/01/19/maplesteve-now-powered-by-jekyll.html) runs perfectly smooth, I wanted to have some kind of control, if (all) pages are re-generated when I make changes to the CSS or other minor things that aren't immediately visible.
 
 So I wanted to have a timestamp of the page generation.
 To have re-usable code, I was looking for a custom Liquid tag for that purpose and found a gist by blakesmith: [render_time.rb](https://gist.github.com/blakesmith/449509).
@@ -17,18 +17,18 @@ Here's render_time.rb:
 ```
 module Jekyll
   class RenderTimeTag < Liquid::Tag
- 
+
     def initialize(tag_name, text, tokens)
       super
       @text = text
     end
- 
+
     def render(context)
       "<!-- #{@text} #{Time.now} -->"
     end
   end
 end
- 
+
 Liquid::Template.register_tag('render_time', Jekyll::RenderTimeTag)
 ```
 
@@ -37,4 +37,3 @@ Just drop it in your ```_plugins``` folder and add the line (enclosed in Liquid 
 ```render_time Page generated at:```
 
 to e.g. your ```default.html```.
-

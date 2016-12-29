@@ -7,11 +7,11 @@ tags: howto dev
 
 **Recently I wondered why a specific method gets called way more often than I would expect. I wanted to find out, which other methods call this.**
 
-#####The usual approach…
+##### The usual approach…
 … would be to set a breakpoint at the beginning of the method and look at the stack trace of Xcode's '*Debug Session*' pane for the calling methods. Surely a tedious way. You'll have to write down the caller and the context that led to the caller.
 
 
-#####A better way…
+##### A better way…
 
 … is to utilize the breakpoint capabilities of Xcode or - more specifically - of *LLDB*, the new debugger which comes with the new compiler *CLANG*.
 In this approach, you'll also set a breakpoint at the beginning of the called method. Then select the breakpoint label and ctrl-click to get a small pop-up which let's you define the *behavior* of the breakpoint:
@@ -34,23 +34,23 @@ After you ran the program (don't forget to enable breakpoints) you'll find the l
 	* thread #1: fooApp -[WMSCollectionViewController collectionView:didSelectItemAtIndexPath:] at WMSCollectionViewController+CollectionViewDelegate.m:41, stop reason = breakpoint 2.1
 
 	frame #0: fooApp -[WMSCollectionViewController collectionView:didSelectItemAtIndexPath:] at WMSCollectionViewController+CollectionViewDelegate.m:41
-    
+
 	#1: fooApp -[WMSCollectionViewController updateCollectionView] at WMSCollectionViewController.m:158
-    
+
 	#2: fooApp -[WMSCollectionViewController reloadDocuments:] at WMSCollectionViewController.m:136
-    
+
 	#3: Foundation __57-[NSNotificationCenter addObserver:selector:name:object:]_block_invoke_0
-    
+
 	#4: CoreFoundation ___CFXNotificationPost_block_invoke_0
-    
+
 	#5: CoreFoundation _CFXNotificationPost
-    
+
 	#6: Foundation -[NSNotificationCenter postNotificationName:object:userInfo:]
-    
+
 	#7: fooApp -[WMSAppDelegate checkDocumentsOpenState] at WMSAppDelegate+DocumentSetup.m:247
-    
+
 	#8: fooApp -[WMSAppDelegate observeValueForKeyPath:ofObject:change:context:] at WMSAppDelegate+DocumentSetup.m:232
-    
+
 	#9: Foundation NSKeyValueNotifyObserver
 
 

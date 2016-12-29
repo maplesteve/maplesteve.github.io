@@ -12,13 +12,13 @@ HeaderDocs comes with Mac OS X (at least when you have Xcode installed). But I w
 
 Apple has open-sourced HeaderDoc and you can find it on Apple's open source website at <http://www.opensource.apple.com/>
 
-####Downlaod & unpack
+#### Downlaod & unpack
 - The most recent version is in the Mac OS X 10.7.3 tree; copy this link and download the archive into a directory on your Linux machine: <http://www.opensource.apple.com/tarballs/headerdoc/headerdoc-8.8.38.tar.gz>
  - ```wget http://www.opensource.apple.com/tarballs/headerdoc/headerdoc-8.8.38.tar.gz```
 
 - unpack with ```tar -xvzf headerdoc-8.8.38.tar.gz``` and ```cd``` into the created directory
 
-####Requirements
+#### Requirements
 HeaderDocs is basically a PERL script, so you'll need a recent PERL installation. This should be the case on every 'normal' system, so I won't dive into installing PERL here. Besides that, HeaderDoc needs some other libraries. If they're not installed, run the following commands:
 
 - FreezeThaw
@@ -33,7 +33,7 @@ HeaderDocs is basically a PERL script, so you'll need a recent PERL installation
 - [checkinstall](http://wiki.debian.org/CheckInstall) (not necessary for this installation, but you should alway use checkinstall, when manually installing software, which circumvents the Ubuntu/Debian package system!)
  - ```sudo apt-get install checkinstall```
 
-####Build & install
+#### Build & install
 - ```make clean```
 - ```make``` - This will actually compile the software & libraries and performs a lot of tests. Three of them ('class 3', 'header 5', 'template 1') failed during my install, but I didn't notice any false behaviour using HeaderDoc.
 - ```sudo checkinstall make realinstall```

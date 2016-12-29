@@ -9,6 +9,4 @@ tags: tech google
 
 Bemerkenswerter Zug von Google. Die Eigenentwicklung wird sukzessive zugunsten eines offenen Standards aufgegeben. Dem User wird’s helfen.
 
-Link: http://gearsblog.blogspot.com/2010/02/hello-html5.html
-
-(Via: Gears API Blog)
+(Via: [Gears API Blog](http://gearsblog.blogspot.com/2010/02/hello-html5.html))
